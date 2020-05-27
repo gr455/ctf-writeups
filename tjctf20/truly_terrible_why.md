@@ -1,4 +1,4 @@
-**TRULY TERRIBLE WHY** \newline
+**TRULY TERRIBLE WHY** 
 
 
 **Category:** Misc
