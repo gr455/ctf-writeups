@@ -1,4 +1,5 @@
-***TRULY TERRIBLE WHY***
+**TRULY TERRIBLE WHY**
+
 **Category:** Misc
 **Concepts:** shell, i/o
 
