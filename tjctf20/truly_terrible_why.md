@@ -1,3 +1,7 @@
+***TRULY TERRIBLE WHY***
+**Category:** Misc
+**Concepts:** shell, i/o
+
 **Problem Statement:**
 Your friend gave you a remote shell to his computer and challenged you to get in, but something seems a little off... The terminal you have seems almost like it isn't responding to any of the commands you put in! Figure out how to fix the problem and get into his account to find the flag! Note: networking has been disabled on the remote shell that you have. Also, if the problem immediately kicks you off after typing in one command, it is broken. Please let the organizers know if that happens.
 
