@@ -75,5 +75,3 @@ Now, I replaced the website token with this forged token and my horse got added.
 
 
 **FLAG:** tjctf{w0www_y0ur_h0rs3_is_f444ST!}
-
-
