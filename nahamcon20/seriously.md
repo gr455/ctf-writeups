@@ -21,7 +21,7 @@ base64 decode of the cookie was:
 
 `{"items":{"0":{"name":"Lemon tree","price":49.99,"count":1}}}` (json format)
 
-Wappalyzer told me that the backend was nodejs. I was reminded of node deserialization vulnerability I had read about some time ago(but never used it). I used (nodeshell.py)[https://github.com/hoainam1989/training-application-security/blob/master/shell/node_shell.py] for my node reverse shell and fired up an ngrok tcp server.
+Wappalyzer told me that the backend was nodejs. I was reminded of node deserialization vulnerability I had read about some time ago(but never used it). I used [nodeshell.py](https://github.com/hoainam1989/training-application-security/blob/master/shell/node_shell.py) for my node reverse shell and fired up an ngrok tcp server.
 
 the script then returned:
 
