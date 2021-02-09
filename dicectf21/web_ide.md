@@ -115,6 +115,12 @@ app.use('/ide', express.static('public/ide'));
 
 app.listen(3000);
 ```
+### Recon:
+ - The flag is in the cookie of the admin
+ - Window object is stripped in the javascript editor
+ - All JS code is executed in the `/sandbox.html` context through a sandboxed iframe
+ - All endpoints except `/sandbox.html` have the `X-Frame-Options: Deny` header
+ - Admin can save arbitrary JS code onto `/saves/:id` with a random 8 byte id (this code is served as MIME `application/javascript`)
 
 I beat my head on this challenge for wayyy too long before getting a hint from the admin that I should look at browser APIs. I came across the `window.postMessage` API which lets two cross origin frames communicate through a `message` event. The frame sourcing `/sandbox.html` takes data from `/ide` and evals it in it's `message` event listener (after stripping down the window objects).
 
